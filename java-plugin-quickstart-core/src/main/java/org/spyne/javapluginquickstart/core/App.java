@@ -20,7 +20,7 @@ public class App {
     if (args.length > 0) {
       pluginsPath = args[0];
     }
-
+    System.out.println("pluginsPath** " + pluginsPath);
     PluginLoader pluginLoader = new PluginLoader(new File(pluginsPath));
     pluginLoader.loadPlugins();
 
